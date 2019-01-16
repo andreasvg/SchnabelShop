@@ -1,0 +1,13 @@
+<ul class="product-list">
+<li class="product-item" *ngFor="let product of filteredProducts$ | async">
+    <div class="product-text">
+      <h3>{{product.make}} {{product.model}}</h3>
+      <strong>{{product.price | currency : 'GBP'}}</strong>
+      <p>
+        {{product.description}}
+      </p>
+    </div>
+    <img src="{{product.imageUrl}}" />
+  </li>
+
+</ul>

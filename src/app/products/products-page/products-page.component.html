@@ -1,0 +1,19 @@
+<div id="products-page">
+  <div class="product-filter">
+    <app-product-filter></app-product-filter>
+    <span>
+      <label for="productSort">Order By:</label>
+      <select name="productSort" id="productSort" (change)="changeSortOrder($event)" [(ngModel)]="selectedSortOrder">
+        <option value="{{productSortOrder.Manufacturer}}">Manufacturer</option>
+        <option value="{{productSortOrder.PriceLoHi}}">Price: Low to High</option>
+        <option value="{{productSortOrder.PriceHiLo}}">Price: High to Low</option>
+      </select>
+    </span>
+  </div>
+
+    <app-product-list></app-product-list>
+
+
+
+  <div class="product-promotions">Promotions</div>
+</div>

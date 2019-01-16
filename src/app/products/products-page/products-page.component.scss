@@ -1,0 +1,32 @@
+#products-page {
+  height: 100%;
+
+
+}
+
+.product-filter {
+  padding: 5px 5px;
+  background-color: gray;
+  background-color: rgb(67, 65, 65);
+  color: white;
+  label {
+    font-size: 0.75em;
+  }
+}
+
+.product-promotions {
+  padding: 5px 5px;
+  border-top-color: gray;
+  border-top-style: solid;
+  border-top-width: 1px;
+  padding-top: 5px;
+}
+
+#productSort {
+  margin-top: 5px;
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width: 992px) {
+  @import "products-page.component.medium";
+}

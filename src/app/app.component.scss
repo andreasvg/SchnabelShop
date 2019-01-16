@@ -1,0 +1,38 @@
+#app-grid-container {
+  min-height: 100vh !important;
+  display: grid;
+  grid-template-rows: 1fr 120px;
+  grid-template-areas:
+  "content"
+  "footer";
+}
+
+header {
+  padding: 5px 5px;
+  background-color: rgb(83, 159, 83);
+  grid-area: header;
+}
+
+nav {
+  padding: 5px 5px;
+  background-color: gray;
+  grid-area: navbar;
+}
+
+.main-router-outlet {
+  grid-area: content;
+}
+
+footer {
+  padding: 5px 5px;
+  background-color: rgb(67, 65, 65);
+  color: white;
+  grid-area: footer;
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width: 992px) {
+  @import "app.component.medium";
+}
+
+

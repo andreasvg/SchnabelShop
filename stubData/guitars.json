@@ -1,0 +1,30 @@
+[
+  {
+    "make": "Gibson",
+    "model": "Les Paul",
+    "description": "The Gibson Les Paul is an icon that has graced the world's stages and studios for over 60 years.",
+    "imageUrl": "/assets/images/lespaul.jpg",
+    "price": 1899
+  },
+  {
+    "make": "Gibson",
+    "model": "ES-335",
+    "description": "The Gibson ES-335 is quite possibly the world's most versatile guitar.",
+    "imageUrl": "/assets/images/es335.jpg",
+    "price": 3799
+  },
+  {
+    "make": "Fender",
+    "model": "Telecaster",
+    "description": "The Telecaster is for all intents and purposes the first commercially successful solidbody electric guitar.",
+    "imageUrl": "/assets/images/telecaster.jpg",
+    "price": 1469
+  },
+  {
+    "make": "Fender",
+    "model": "Stratocaster",
+    "description": "The Fender Stratocaster is the instrument used by Jimi Hendrix, Richie Blackmore, Eric Clapton and John Mayer.",
+    "imageUrl": "/assets/images/stratocaster.jpg",
+    "price": 1599
+  }
+]

@@ -1,0 +1,27 @@
+{
+  "servers": [
+    {
+      "port": 4201,
+      "routes": [
+        {
+          "path": "/api/v1/products",
+          "methods": ["GET"],
+          "handler": "frock-static",
+          "middleware": [
+              {
+                  "handler": "frock-middleware-cors",
+                  "options": {
+                      "allowOrigin": "http://localhost:4200",
+                      "allowCredentials": true
+                  }
+              }
+          ],
+          "options": {
+            "file": "stubData/guitars.json",
+            "contentType": "application/json"
+          }
+        }
+      ]
+    }
+  ]
+}
